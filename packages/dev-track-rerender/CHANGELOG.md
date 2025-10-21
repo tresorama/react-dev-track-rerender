@@ -1,5 +1,11 @@
 # @tresorama/react-dev-track-rerender
 
+## 0.1.3
+
+### Patch Changes
+
+- 49c0419: fix: no exported member in packages
+
 ## 0.1.2
 
 ### Patch Changes
