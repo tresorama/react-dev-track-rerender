@@ -1,5 +1,6 @@
 {
   "name": "@tresorama/react-dev-track-rerender",
+  "version": "0.0.0",
   "sideEffects": false,
   "main": "./dist/index.cjs.js",
   "types": "./dist/index.d.cts",
