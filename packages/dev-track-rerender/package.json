@@ -1,0 +1,25 @@
+{
+  "name": "@tresorama/react-dev-track-rerender",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/components/dev-track-re-render/index.d.ts",
+      "default": "./dist/components/dev-track-re-render/index.js"
+    }
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "19.1.0",
+    "radix-ui": "^1.4.3",
+    "react": "^19.1.0",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "radix-ui": "^1.4.3",
+    "react": "^19.1.0"
+  }
+}

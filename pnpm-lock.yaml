@@ -124,6 +124,24 @@ importers:
         specifier: ^5
         version: 5.9.2
 
+  packages/dev-track-rerender:
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@types/react':
+        specifier: 19.1.0
+        version: 19.1.0
+      radix-ui:
+        specifier: ^1.4.3
+        version: 1.4.3(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react:
+        specifier: ^19.1.0
+        version: 19.2.0
+      typescript:
+        specifier: ^5
+        version: 5.9.2
+
   packages/eslint-config:
     devDependencies:
       '@eslint/js':
