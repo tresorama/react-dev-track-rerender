@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { DevTrackReRenderGlobalProvider } from "@tresorama/react-dev-track-rerender";
 
 import "./globals.css";
 
@@ -32,7 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <DevTrackReRenderGlobalProvider
+          isEnabled
+        >
+          {children}
+        </DevTrackReRenderGlobalProvider>
       </body>
     </html>
   );

@@ -47,6 +47,9 @@ importers:
       '@tanstack/react-virtual':
         specifier: ^3.13.12
         version: 3.13.12(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@tresorama/react-dev-track-rerender':
+        specifier: workspace:*
+        version: link:../../packages/dev-track-rerender
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
