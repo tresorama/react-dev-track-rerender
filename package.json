@@ -1,5 +1,5 @@
 {
-  "name": "subs-to",
+  "name": "root",
   "private": true,
   "scripts": {
     "build": "turbo run build",
