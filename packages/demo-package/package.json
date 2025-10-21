@@ -1,5 +1,6 @@
 {
   "name": "@demo/package",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "tsc --watch",
