@@ -1,25 +1,50 @@
 {
   "name": "@tresorama/react-dev-track-rerender",
+  "version": "0.1.1",
+  "sideEffects": false,
+  "main": "./dist/index.cjs.js",
+  "types": "./dist/index.d.cts",
   "type": "module",
-  "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc"
-  },
   "exports": {
     ".": {
-      "types": "./src/components/dev-track-re-render/index.d.ts",
-      "default": "./dist/components/dev-track-re-render/index.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs.js"
+      }
     }
+  },
+  "scripts": {
+    "dev": "tsup  --config tsup.config.ts --watch",
+    "build": "tsup --config tsup.config.ts"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "@types/react": "19.1.0",
     "radix-ui": "^1.4.3",
     "react": "^19.1.0",
+    "tsup": "^8.5.0",
     "typescript": "^5"
   },
   "peerDependencies": {
     "radix-ui": "^1.4.3",
     "react": "^19.1.0"
+  },
+  "homepage": "https://github.com/tresorama/react-dev-track-rerender",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tresorama/react-dev-track-rerender"
+  },
+  "bugs": {
+    "url": "https://github.com/tresorama/react-dev-track-rerender/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jacopo Marrone (@tresorama)",
+    "email": "jacopo.marrone.work@gmail.com",
+    "url": "https://github.com/tresorama"
   }
 }
