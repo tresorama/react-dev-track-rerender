@@ -9,6 +9,7 @@
   "updateInternalDependencies": "patch",
   "ignore": [
     "@repo/*",
-    "consumer-repo-next"
+    "consumer-repo-next",
+    "consumer-npm-next"
   ]
 }
