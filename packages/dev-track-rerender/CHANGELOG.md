@@ -1,5 +1,11 @@
 # @tresorama/react-dev-track-rerender
 
+## 0.1.4
+
+### Patch Changes
+
+- 53e3b43: fix: allow install with react >=16.8 <20
+
 ## 0.1.3
 
 ### Patch Changes
