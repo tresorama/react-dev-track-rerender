@@ -76,3 +76,10 @@ const MyButton = ({ children }: { children: React.ReactNode; }) => (
 You must explicitly render the `DevTrackRerenderGlobalProvider` once at the root of your app and pass `isEnabled` to `true`.  
 Default is `false`.  
 When `false` the `DevTrackRerender` component will render the children directly.
+
+## Limitations
+
+### When `React.StricMode` is enabled, mount renders are not made visible in the UI
+
+If `React.StrictMode` is enabled, you cannot see the monut event in the UI.  
+In order to see the mount event, disable `React.StrictMode` in your app while debugging rerenders, then re-enable it when you are done.  
