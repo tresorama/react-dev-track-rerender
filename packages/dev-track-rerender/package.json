@@ -34,7 +34,7 @@
   },
   "peerDependencies": {
     "radix-ui": "^1.4.3",
-    "react": "^19.1.0"
+    "react": ">=16.8.0 <20.0.0"
   },
   "homepage": "https://github.com/tresorama/react-dev-track-rerender",
   "repository": {
