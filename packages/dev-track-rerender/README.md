@@ -1,7 +1,10 @@
 # react-dev-track-rerender
 
-React Component that Tracks Mount and Rerender
+React Component that Tracks Mount and Rerender.  
 
+When used shows the mount and rerender life-cycle in the UI by showing two visual indicator:
+- mount -> "yellow" 
+- rerender -> "blue"
 
 ## Basic Usage
 
