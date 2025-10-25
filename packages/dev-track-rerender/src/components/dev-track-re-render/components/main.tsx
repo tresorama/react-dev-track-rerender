@@ -28,7 +28,7 @@ export function DevTrackRerender({
   const resolvedVariant = variant ?? ctx.defaultVariant;
 
   // render
-  if (!ctx.isEnabled) return children;
+  if (!ctx.isEnabled) return <>{children}</>;
 
   if (resolvedVariant === 'border') {
     return (
