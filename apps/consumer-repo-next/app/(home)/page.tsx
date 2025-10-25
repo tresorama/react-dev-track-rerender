@@ -1,4 +1,5 @@
 import { Counter_RC } from "./components/counter/react-context";
+import { Counter_Zustand } from "./components/counter/zustand";
 
 import { cn } from "@/components/shadcn/lib/utils";
 
@@ -15,13 +16,22 @@ export default function Home() {
 const SectionCounters = () => (
   <UiSection>
     <UiSectionTitle text="Counters" />
-    <UiSectionContent className="grid-cols-3">
-      <UiSectionContentItem text="subs-to">
+    <UiSectionContent className="grid-cols-4">
+      <UiSectionContentItem text="react-context">
         <Counter_RC />
         <Counter_RC />
         <Counter_RC />
         <Counter_RC />
       </UiSectionContentItem>
+      <UiSectionContentItem text="zustand" className="col-start-3">
+        <Counter_Zustand />
+        <Counter_Zustand />
+        <Counter_Zustand />
+        <Counter_Zustand />
+      </UiSectionContentItem>
+    </UiSectionContent>
+  </UiSection>
+);
     </UiSectionContent>
   </UiSection>
 );
