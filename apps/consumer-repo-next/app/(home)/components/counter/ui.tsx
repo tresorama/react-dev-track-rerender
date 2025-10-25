@@ -14,8 +14,16 @@ export const UiCounterCard = ({ children }: { children: React.ReactNode; }) => (
 
 export const UiCounterCount = ({ count }: { count: number; }) => (
   <DevTrackRerender>
-    <span className="text-2xl">
+    <span className="min-w-[3ch] text-2xl text-center">
       {count}
+    </span>
+  </DevTrackRerender>
+);
+
+export const UiCounterIsZeroLabel = ({ isZero }: { isZero: boolean; }) => (
+  <DevTrackRerender>
+    <span className="mx-auto text-sm text-muted-foreground">
+      isZero: {isZero ? "✅" : "❌"}
     </span>
   </DevTrackRerender>
 );
@@ -27,7 +35,7 @@ export const UiCounterActions = ({
   onIncrement: () => void;
   onDecrement: () => void;
 }) => (
-  <div className="ml-auto">
+  <div className="">
     <DevTrackRerender>
       <div className="flex gap-2">
         <UiButton size="icon" onClick={onIncrement}>
