@@ -1,5 +1,11 @@
 # @tresorama/react-dev-track-rerender
 
+## 0.1.5
+
+### Patch Changes
+
+- 6151d7f: fix: types - DevTrackRerender cannot be used as a JSX component
+
 ## 0.1.4
 
 ### Patch Changes

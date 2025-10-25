@@ -1,6 +1,6 @@
 {
   "name": "@tresorama/react-dev-track-rerender",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "sideEffects": false,
   "files": [
     "dist"
