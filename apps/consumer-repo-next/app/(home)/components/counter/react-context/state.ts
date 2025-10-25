@@ -1,6 +1,6 @@
 'use client';
 
-import { createReactContextStore } from '@/lib/state/create-react-context-store';
+import { createReactContextStore } from '@/lib/state/react-context/create-react-context-store';
 
 
 // store types

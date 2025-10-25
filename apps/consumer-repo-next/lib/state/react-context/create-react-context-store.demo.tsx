@@ -1,4 +1,4 @@
-import { getRandomIdWithSeed } from "../utils/random";
+import { getRandomIdWithSeed } from "../../utils/random";
 import { createReactContextStore } from "./create-react-context-store";
 
 // domain types  
