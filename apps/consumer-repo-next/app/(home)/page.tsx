@@ -1,13 +1,18 @@
 import { Counter_RC } from "./components/counter/react-context";
 import { Counter_Zustand } from "./components/counter/zustand";
 
+import { Todos_RC_Plain } from "./components/todos/react-context";
+import { Todos_Zustand_SortableDndKit } from "./components/todos/zustand/sortable-dnd-kit";
+import { Todos_Zustand_SortableDndKit_VirtualizedVirtua } from "./components/todos/zustand/sortable-dnd-kit--virtualized-virtua";
+
 import { cn } from "@/components/shadcn/lib/utils";
 
 export default function Home() {
   return (
     <main className="py-16 px-8">
-      <div className="w-full max-w-[1400px] mx-auto flex flex-col justify-center items-center gap-16">
+      <div className="w-full max-w-[1900px] mx-auto flex flex-col justify-center items-center gap-16">
         <SectionCounters />
+        <SectionTodos />
       </div>
     </main>
   );
@@ -32,6 +37,20 @@ const SectionCounters = () => (
     </UiSectionContent>
   </UiSection>
 );
+
+const SectionTodos = () => (
+  <UiSection>
+    <UiSectionTitle text="Todos" />
+    <UiSectionContent className="grid-cols-4">
+      <UiSectionContentItem text="react-context">
+        <Todos_RC_Plain />
+      </UiSectionContentItem>
+      <UiSectionContentItem text="zustand + sortable (dnd-kit)" className="col-start-3">
+        <Todos_Zustand_SortableDndKit />
+      </UiSectionContentItem>
+      <UiSectionContentItem text="zustand + sortable (dnd-kit) + virtualized (virtua)">
+        <Todos_Zustand_SortableDndKit_VirtualizedVirtua />
+      </UiSectionContentItem>
     </UiSectionContent>
   </UiSection>
 );
